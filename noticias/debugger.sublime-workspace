@@ -1,0 +1,256 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 35,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nEmmet\n-----\n\n  Emmet plugin installed\n\n  Emmet is a web-developer’s toolkit for boosting HTML & CSS code writing.\n\n  With Emmet, you can type expressions (abbreviations) similar to CSS selectors and convert them into code fragment with a single keystroke. For example, this abbreviation:\n\n  ul#nav>li.item$*4>a{Item $}\n\n  ...can be expanded into:\n\n  <ul id=\"nav\">\n      <li class=\"item1\"><a href=\"\">Item 1</a></li>\n      <li class=\"item2\"><a href=\"\">Item 2</a></li>\n      <li class=\"item3\"><a href=\"\">Item 3</a></li>\n      <li class=\"item4\"><a href=\"\">Item 4</a></li>\n  </ul>\n\n  Read more about Emmet for Sublime Text:\n  https://github.com/emmetio/sublime-text-plugin#readme\n\nDebugger\n--------\n\n  For getting set up see https://github.com/daveleroy/sublime_debugger/blob/master/docs/setup.md\n  If you have issues or need help https://github.com/daveleroy/sublime_debugger\n\n  For a full list of changes see https://github.com/daveleroy/sublime_debugger/commits\n\n  Whats new in version 0.2.4\n  - Fixes rendering issue with variable values\n  - Adds missing mdpopups dependency \n\n  Whats new in version 0.2.3\n  - Updates path for lldb\n\n  Whats new in version 0.2.2\n  - Show dialog with error message when launching fails (to match vscode)\n  - In multi-threaded programs the reason for why a specific thread was stopped is now only displayed on that thread even if all threads were stopped\n  - If running a build with `sublime_build` in the configuration don't start debugging if the build fails with an exit code\n  - Fixes issue with pause not working\n  - Fixes rendering performance regression\n  - Fixes gutter icons on windows\n\n\n  Whats new in version 0.2.1\n  - Debugging with a single thread now just displays the stack frames without the thread header\n  - When launching a configuration and the adapter is not installed offer to install it\n  - When auto selecting a stack frame prefer the first none subtle stack frame\n  - Fixes call stack layout when encountering long stack frame names\n  - Fixes various issues with multi threaded debugging\n  - Fixes hover providers\n\n  Whats new in version 0.2.0\n  - Support for column breakpoints (requires adapter support)\n  - Support for data breakpoints (requires adapter support, currently only lldb?)\n  - Left-click gutter now toggles breakpoints, right-clicking a breakpoint allows editing/advanced options\n  - Watch expressions\n  - Loaded Modules/Sources panels\n  - Adds Node debug adapter (@appelgriebsch)\n  - External terminal support. Terminal on Mac (Needs support for Windows/Linux) or Sublime's Terminus package.\n  - Integrated terminal now strips ascii control sequences \n  - Settings button\n  - Show currently installed version of an adapter, show download progress when installing an adapter\n  - Fixes issues that sometimes occurred installing/reinstalling adapters\n  - Fixes issues with reloading plugin\n\n  Whats new in version 0.1.8\n  - Fixes core not defined error\n\n  Whats new in version 0.1.7\n  - Allow setting logging options in settings\n  - Updated url for vscode-firefox-debugger (@appelgriebsch)\n  - Fixes issue preventing Debugger: Install Adapters from being run from the command palette\n  - Fixes issue where some debug adapters were failing to be fully unzipped on Windows because of long paths\n\n  Whats new in version 0.1.6\n  - Adds run to cursor command\n  - Fixes issue preventing installing debug adapters\n\n  Whats new in version 0.1.5\n  - Fixes issue that prevented debugging on windows\n\n  Whats new in version 0.1.4\n  - New styling of panels and updated layout to better support temporary panels created for build results/integrated terminal (and in the future allow customizing the layout of the panels)\n  - New console rendering code to support text wrapping and build results/integrated terminal\n  - Support internal terminal requests to allow program input. Requires configuration changes to use this feature which depends on the adapter in question. (LLVM uses \"terminal\": \"integrated\")\n  - Allow defining platform specific configuration settings with a top level object called \"linux\", \"osx\", or \"windows\" in your configuration. Same as vscode \n  - Fixes issue where hover providers/autocomplete/run command was not working for some debug adapters \n  - Fixes issue where using $file and other variables in a configuration had their values expanded when the debugger was opened not when the debugger was started\n  - Fixes some wonkiness that occurred when stepping the debugger that caused it to not update correctly\n\n  Whats new in version 0.1.3\n  - When attempting to open the debugger in a window without a sublime project prompt the user to create one.\n  - Fixes some other minor bugs and configuration issues\n\n  Whats new in version 0.1.0\n  - Adds package control support\n\nDebugger\n--------\n\n  For getting set up see https://github.com/daveleroy/sublime_debugger/blob/master/docs/setup.md\n  If you have issues or need help https://github.com/daveleroy/sublime_debugger\n\n  For a full list of changes see https://github.com/daveleroy/sublime_debugger/commits\n\n  Whats new in version 0.2.4\n  - Fixes rendering issue with variable values\n  - Adds missing mdpopups dependency \n\n  Whats new in version 0.2.3\n  - Updates path for lldb\n\n  Whats new in version 0.2.2\n  - Show dialog with error message when launching fails (to match vscode)\n  - In multi-threaded programs the reason for why a specific thread was stopped is now only displayed on that thread even if all threads were stopped\n  - If running a build with `sublime_build` in the configuration don't start debugging if the build fails with an exit code\n  - Fixes issue with pause not working\n  - Fixes rendering performance regression\n  - Fixes gutter icons on windows\n\n\n  Whats new in version 0.2.1\n  - Debugging with a single thread now just displays the stack frames without the thread header\n  - When launching a configuration and the adapter is not installed offer to install it\n  - When auto selecting a stack frame prefer the first none subtle stack frame\n  - Fixes call stack layout when encountering long stack frame names\n  - Fixes various issues with multi threaded debugging\n  - Fixes hover providers\n\n  Whats new in version 0.2.0\n  - Support for column breakpoints (requires adapter support)\n  - Support for data breakpoints (requires adapter support, currently only lldb?)\n  - Left-click gutter now toggles breakpoints, right-clicking a breakpoint allows editing/advanced options\n  - Watch expressions\n  - Loaded Modules/Sources panels\n  - Adds Node debug adapter (@appelgriebsch)\n  - External terminal support. Terminal on Mac (Needs support for Windows/Linux) or Sublime's Terminus package.\n  - Integrated terminal now strips ascii control sequences \n  - Settings button\n  - Show currently installed version of an adapter, show download progress when installing an adapter\n  - Fixes issues that sometimes occurred installing/reinstalling adapters\n  - Fixes issues with reloading plugin\n\n  Whats new in version 0.1.8\n  - Fixes core not defined error\n\n  Whats new in version 0.1.7\n  - Allow setting logging options in settings\n  - Updated url for vscode-firefox-debugger (@appelgriebsch)\n  - Fixes issue preventing Debugger: Install Adapters from being run from the command palette\n  - Fixes issue where some debug adapters were failing to be fully unzipped on Windows because of long paths\n\n  Whats new in version 0.1.6\n  - Adds run to cursor command\n  - Fixes issue preventing installing debug adapters\n\n  Whats new in version 0.1.5\n  - Fixes issue that prevented debugging on windows\n\n  Whats new in version 0.1.4\n  - New styling of panels and updated layout to better support temporary panels created for build results/integrated terminal (and in the future allow customizing the layout of the panels)\n  - New console rendering code to support text wrapping and build results/integrated terminal\n  - Support internal terminal requests to allow program input. Requires configuration changes to use this feature which depends on the adapter in question. (LLVM uses \"terminal\": \"integrated\")\n  - Allow defining platform specific configuration settings with a top level object called \"linux\", \"osx\", or \"windows\" in your configuration. Same as vscode \n  - Fixes issue where hover providers/autocomplete/run command was not working for some debug adapters \n  - Fixes issue where using $file and other variables in a configuration had their values expanded when the debugger was opened not when the debugger was started\n  - Fixes some wonkiness that occurred when stepping the debugger that caused it to not update correctly\n\n  Whats new in version 0.1.3\n  - When attempting to open the debugger in a window without a sublime project prompt the user to create one.\n  - Fixes some other minor bugs and configuration issues\n\n  Whats new in version 0.1.0\n  - Adds package control support",
+			"settings":
+			{
+				"buffer_size": 8881,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"intall",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/xampp/htdocs/Apps",
+		"/C/xampp/htdocs/Apps/noticias"
+	],
+	"file_history":
+	[
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "header.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 35,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8881,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8881,
+								8881
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1759.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "debugger.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -4,16 +4,13 @@
 		<img src="" alt="Logo Aqui"> 
 	</figure>
 
-	<nav>
-		<ul>
-			<li><a href="" item2="">Início</a></li>
-			<li><a href="" item1="">Cadastrar Notícia </a></li>
-			
 
-			
-		</ul>
-	</nav>
-	<form action="search" >
+	<form method="Get" action="search.php">
 		<input type="text" placeholder="Digite o conteúdo que procura..." >
+		<input type="submit" value="Buscar">
 	</form>
+	<nav>
+		<a href="" item1="">Cadastrar Notícia </a>
+		<a href="" item2="">Início</a>
+	</nav>
 </header>

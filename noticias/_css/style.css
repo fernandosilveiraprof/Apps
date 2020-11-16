@@ -1,1 +1,59 @@
-// estilo main
+
+*, body, html{
+	margin: 0px;
+	padding: 0px;
+	/*border: 1px solid red;*/
+	font-family: Arial, Tahoma;
+	font-size: 20px;
+}
+body{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: black;
+
+}
+header{
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 70px;
+	background: #ddd;
+	top:0px;
+	left: 0px;
+
+
+}
+nav	{
+	position: relative;
+	width:  250px;
+
+	float: right;
+	
+}
+header > *{
+	margin: 20px 25px;
+}
+header nav a {
+	text-decoration: none;
+	
+	font-size: 20;
+	margin-right: 20px;
+	float: right;
+
+}
+
+header form{ 
+	float: right;
+
+
+}
+header form input{
+	font-size: 16px;
+}
+header figure {
+	float: left;
+
+
+
+}
