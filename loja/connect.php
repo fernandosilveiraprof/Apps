@@ -1,6 +1,6 @@
 <?php
 try{
-	$pdo = new PDO("mysql:dbname=SYSTEM1; host=localhost", "root","");
+	$pdo = new PDO("mysql:dbname=SYSTEM1; host=localhost", "phpmyadmin","nando321");
 }
 catch (PDOException $e){
 	echo "Erro no banco de dados: ".$e->getMessage();
