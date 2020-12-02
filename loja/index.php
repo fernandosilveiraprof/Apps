@@ -15,15 +15,13 @@
 	<article>
 		###
 		<?php 
-		$page = $_GET['page']?$_GET['page']:"page=frontend/inicio.php";
+		$page = $_GET['page']?$_GET['page']:"frontend/inicio.php";
 		echo $page;
-		if (!$page){
-			include('frontend/inicio.php');
+		include($page);
 
-		}
 		?> 
-	}
 
-</article>
+
+	</article>
 </body>
 </html>

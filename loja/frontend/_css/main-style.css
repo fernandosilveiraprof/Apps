@@ -6,7 +6,7 @@
 
 body * {
 
-	padding: 5px;
+	padding: 2px;
 
 }
 header, nav, footer {
@@ -51,13 +51,13 @@ aside {
 }
 
 article{
-
+	width: ;
 	background-color: #eee;
 
 }
 
 article, aside {
-
+	position: absolute;
 	top: 70px;
 
 }
@@ -154,4 +154,17 @@ header input[type=checkbox]{
 	line-height: 20px;
 
 }
+nav ul li a, nav label{
 
+	display: block;
+	background: rgba(255,255,255,0.5);
+
+}
+
+
+nav ul li a:hover, nav label:hover{
+
+	cursor: pointer;
+	background: rgba(255,255,255,0.5);
+
+}

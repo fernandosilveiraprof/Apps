@@ -13,7 +13,7 @@
 				<input type="checkbox"  id=produtos>
 				<label for="produtos">Produtos</label>
 				<ul class=dropdown>
-					<li><a href="">Espadas </a></li>
+					<li><a href="?page=frontend/espadas.php">Espadas </a></li>
 					<li><a href="">Espadas em Minitatura</a></li>
 				</ul>
 				
