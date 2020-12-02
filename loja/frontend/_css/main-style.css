@@ -1,0 +1,157 @@
+*{
+
+	font-family: "Arial";
+
+}
+
+body * {
+
+	padding: 5px;
+
+}
+header, nav, footer {
+	
+	width: 100vw;
+
+}	
+
+header, nav, footer {
+
+	height: 50px;
+
+}
+header, nav, footer {
+
+	position: fixed;
+	z-index: 10;
+
+}
+
+header, nav, footer {
+
+	background-color: black;
+
+}
+
+nav, header {
+
+	top:0px;
+
+}
+
+aside {
+	
+	position: absolute;
+	z-index: 1;
+	width: 200px;
+	height: 0 auto;
+	background-color: #ccc;
+	right: 20px;
+
+}
+
+article{
+
+	background-color: #eee;
+
+}
+
+article, aside {
+
+	top: 70px;
+
+}
+
+footer{
+
+	bottom: 0px;
+	color: #EEE;
+	text-align: center;
+
+}
+
+header nav a, footer a{
+
+	color: white;
+	text-decoration: none;
+
+}
+
+#list1 > li{
+
+	float:left;
+
+}
+
+#list2{
+
+	margin-right: 20px;
+
+}
+
+#list2 > li{
+
+	float: right
+
+}
+
+nav {
+
+	color: white;
+
+}
+
+#list1{
+
+	width: 600px;
+
+}
+
+#list1 ul {
+
+	background-color: #333;
+	height: auto;
+	text-align: left;
+
+}
+
+label[for=redes] ~ #redes {
+
+	display: none;
+
+}
+
+label[for=redes]:checked ~ #redes {
+
+	display: block;
+
+}
+#redes ~ .dropdown,
+#serv ~ .dropdown,
+#produtos ~.dropdown
+
+{
+	position: absolute;
+	z-index: 0;
+	display: none;
+
+}
+
+#serv:checked ~ .dropdown,
+#produtos:checked ~ .dropdown,
+#redes:checked ~ .dropdown
+
+{
+	z-index: 100;
+	display: block;
+}
+
+header input[type=checkbox]{
+	display: none
+}
+#list1 ul li { 
+
+	line-height: 20px;
+
+}
+
