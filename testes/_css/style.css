@@ -1,8 +1,3 @@
-body {
-	font-family: "Tahoma";
-}
-
-
 * {
 
 	margin:0;
@@ -38,9 +33,6 @@ nav a {
 
 	color: white;
 
-	text-align: right;
-	width: 200px;
-
 }
 
 .menu {
@@ -54,8 +46,8 @@ nav a {
 	line-height: 50px;
 
 
-	display: block;
-	
+	display: flex;
+	float: left;
 	padding: 0px;
 	margin: 0px;
 
@@ -63,15 +55,10 @@ nav a {
 	text-align: center;
 
 }
-
-.menu:hover {
-	background-color: rgba(255,255,255,0.05);
-}
 .menu span {
 
 	width: 40px;
 	height: 50px;
-	margin: 0px 10px;
 
 }
 .submenu {
@@ -87,8 +74,8 @@ nav a {
 
 	
 	top:50px;
-	left: -160px;
-	min-width: 200px;
+	left: -205px;
+	width: 200px;
 
 	background-color: black;
 
@@ -107,27 +94,29 @@ nav a {
 
 .submenu ul{
 
+	margin: 0px;
+	padding:0px;
 
-	min-width: 40px;
+	width: 200px;
 	min-height: 50px;
 
 
 }
-
 .submenu li {
 
 	width: 200px;
-	text-align: left;
+	margin: 0px;
+	left: 0px;
+
+
+
+
 	line-height: 40px;
 
 }
-
-.submenu ul li a {
-
-	text-decoration: none;
+.submenu a {
+	padding-left: 20px;
 	display: block;
-	width: 200px;
-	background-color: rgba(255,255,255,0.4);
 
 }
 
@@ -139,28 +128,7 @@ nav a {
 
 nav .menu:hover > .submenu {
 
-	left: 0px;
+	display: block;
+	left: -5px;
 
 }
-
-
-.icon {
-
-	min-width: 40px;
-	height:40px;
-	line-height: 40px;
-	margin: 0px 5px;
-	font-size: 1.5em;
-	color: rgba(255,255,255,0.5);
-	text-align: center;
-
-}
-
-
-.submenu span:hover > .nameitem {
-	overflow: visible ;
-	width: 200px;
-	
-}
-
-

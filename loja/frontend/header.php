@@ -1,42 +1,97 @@
-<header>
-	<nav>
-		<ul id="list1">
-			<li><a href="?page=inicio.php"> Início </a></li>
-			<li>
-				<input type="checkbox" id="serv">
-				<label for="serv"> Serviços </label>
-				<ul class="dropdown">
-					<li> <a href=""> Encomenda  </a></li>
-				</ul>
-			</li>
-			<li>
-				<input type="checkbox"  id=produtos>
-				<label for="produtos">Produtos</label>
-				<ul class=dropdown>
-					<li><a href="?page=frontend/espadas.php">Espadas </a></li>
-					<li><a href="">Espadas em Minitatura</a></li>
-				</ul>
-				
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> Store  </title>
+	<?php 
+	require 'frontend/cssfiles.php'; 
+	
+	?>
 
-			</li>
-			<li>
-				<input type="checkbox" id=redes>
-				<label for="redes"> Contatos </label>
-				<ul class=dropdown >
-					<li><a href="">Contato </a></li>
-					<li><a href="">Facebook</a></li>
-					<li><a href="">Twitter</a></li>
-					<li><a href="">Instagram</a></li>
-				</ul>
-			</li>
-		</ul>
+</head>
+<body>
+	<header>
+		<nav>
+			
+			<div class="menu">
+				<span>
+					<i class="fa fa-bars"></i>
 
-		<ul id="list2">
+				</span>
+				<div class="submenu">
+					<ul>
+						<li>
+							<a href="index.php">
+								<span class="nameitem">
 
-			<li> <a href=""> Login  </a> </li>
-			<li> <a href="cadastre-se.php"> Cadastre-se  </a> |</li>
-		</ul>
+									início
+									
+								</span>
+								<span class="icon">
+									<i class="fa fa-home"></i>
+									
+								</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="os.php">
+								<span class="nameitem">
+
+									O.S 
+
+								</span>
+								<span class="icon">
+									<i class="fa fa-file"></i>
+
+								</span>
+							</a>
+						</li>
+
+						<li>
+							<a href="clientes.php">
+								<span class="nameitem">
+
+									Clientes 
+
+								</span>
+								<span class="icon">
+									<i class="fa fa-user"></i>
+
+								</span>
+							</a>
+						</li>
+						
+						<li>
+							<a href="estoque.php">
+								<span class="nameitem">
+
+									Estoque 
+
+								</span>
+								<span class="icon">
+									<i class="fa fa-archive"></i>
+
+								</span>
+							</a>
+						</li>
+						
 
 
-	</nav>	
-</header><!-- /header -->
+
+
+					</ul>
+				</div>
+				<a href="Index.html">
+					<span id="logo">
+						Logo 
+					</span>
+					<span id="name">
+						Nome da Empresa 
+					</span>
+				</a>
+			</div>
+
+		</nav>	
+	</header><!-- /header -->
