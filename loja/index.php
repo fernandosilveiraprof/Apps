@@ -1,5 +1,9 @@
 
-<?php require_once 'frontend/header-aside.php'; ?>
+<?php 
+require_once 'frontend/header-aside.php'; 
+require_once 'backend/connect.php';
+
+?>
 
 <article>
 	###

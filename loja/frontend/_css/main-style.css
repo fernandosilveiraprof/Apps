@@ -2,27 +2,27 @@ body {
 	font-family: "Tahoma";
 }
 
-
 * {
 
 	margin:0;
 	padding:0;
-	/*border: 1px solid red;*/
-
+	
+	border: 1px solid red;
 }
 
 body {
 
 	padding: 0px;
 	margin: 0px;
-	display: flex;
+	background-color: #ddd;
+	
 
 }
 
-nav	{
+#nav	{
 
 	margin: 0px;
-	padding: 0px;
+	padding: 5px;
 	background-color: black;
 	color: white;
 	position: fixed;
@@ -34,39 +34,54 @@ nav	{
 
 }
 
-nav a {
+#nav a {
 
 	color: white;
-
 	text-align: right;
-	width: 200px;
+	
 
 }
 
-.menu {
 
+#nav input[type=checkbox],
+.submenu input[type=checkbox]
+{
+
+	display: none;
+
+}
+
+
+
+#equiv ~ .menu {
+
+	z-index: 10;
 	position: absolute;
-
-	min-width: 50px auto;
-	min-height: 50px;
-
-	
-	line-height: 50px;
-
-
-	display: block;
-	
+	margin:0px;
 	padding: 0px;
-	margin: 0px;
-
+	min-width: 100px;
+	max-width: 200px;
 	background-color: black;
-	text-align: center;
+	text-align: right;
+	margin-left: -200px;
+	max-height: 500px;
+	overflow-x: hidden;
+	overflow-y: auto;
 
 }
 
-.menu:hover {
-	background-color: rgba(255,255,255,0.05);
+
+#equiv:checked ~ .menu {
+	position: fixed;
+
+	line-height: 50px;
+	display: block;
+	padding: 0px;
+	margin-left: -5px;
+	top: 50px;
+
 }
+
 .menu span {
 
 	width: 40px;
@@ -74,93 +89,94 @@ nav a {
 	margin: 0px 10px;
 
 }
-.submenu {
+.menu a {
 	
-	position: absolute;
-	z-index: 10;
+	display: block;
 
-	margin: 0px;
-	padding: 0px;
+}
 
-	min-height: 200px;
-	max-height: 600px; 
 
+label[for="equiv"] {
+	font-size: 20px;
+	width: 40px;
 	
-	top:50px;
-	left: -160px;
-	min-width: 200px;
+}
 
+.submenu
+
+
+{
+
+	margin-left: 0px;
 	background-color: black;
+	min-width: 100px;
+	max-width: 200px;
+	min-height: 0px;
+	max-height: 0px;
+	overflow:  hidden;
+	transition: .1s;
 
-	overflow-y: auto;
-	overflow-x: hidden  ;
+
+}
+#OS:checked ~ #ossub,
+#clientes:checked ~ #clisub,
+#estoque:checked ~ #estoquesub,
+#servicos:checked ~ #servsub
+
+
+{
+
+	min-height: 40px;
+	max-height: 700px;
+	overflow:  visible;
 	
 
+}
+
+nav .menu > label {
+
+	cursor: pointer;
 	display: block;
-	float: left;
-
-
-	transition-duration: 1s;
-
-
-}
-
-.submenu ul{
-
-
-	min-width: 40px;
-	min-height: 50px;
+	background-color: #444;
+	min-width: 100px;
+	max-width: 200px;
 
 
 }
+.submenu a{
 
-.submenu li {
+	
+	display: block;
+	text-align: right;
+	padding-left: 10px;
 
-	width: 200px;
-	text-align: left;
+}
+.submenu i {
+
+	font-size: 20px;
+	float: right;
 	line-height: 40px;
 
 }
 
-.submenu ul li a {
-
-	text-decoration: none;
-	display: block;
-	width: 200px;
-	background-color: rgba(255,255,255,0.4);
-
-}
-
-.submenu a:hover {
-
-	background-color: rgba(255,255,255,.2);
-
-}
-
-nav .menu:hover > .submenu {
-
-	left: 0px;
-
-}
-
-
-.icon {
-
-	min-width: 40px;
-	height:40px;
-	line-height: 40px;
-	margin: 0px 5px;
-	font-size: 1.5em;
-	color: rgba(255,255,255,0.5);
+footer {
+	position: fixed;
+	z-index: 10;
 	text-align: center;
-
+	width: 100vw;
+	bottom: 0px;
 }
+article {
 
-
-.submenu span:hover > .nameitem {
-	overflow: visible ;
-	width: 200px;
+	z-index: 9;
+	position: absolute;
+	margin-left: 150px;
+	top: 100px;
+	width: 80vw;
+	height: auto;
+	background-color:#fff;
 	
+	
+
+
 }
-
-

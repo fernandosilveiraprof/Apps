@@ -12,86 +12,88 @@
 </head>
 <body>
 	<header>
-		<nav>
-			
-			<div class="menu">
-				<span>
-					<i class="fa fa-bars"></i>
-
+		<nav id="nav">
+			<input id="equiv" type="checkbox" checked="">
+			<label for="equiv" >
+				&equiv;
+			</label>
+			<a href="Index.html">
+				<span id="logo">
+					Logo 
 				</span>
-				<div class="submenu">
-					<ul>
-						<li>
-							<a href="index.php">
-								<span class="nameitem">
+				<span id="name">
+					Nome da Empresa 
+				</span>
+			</a>
 
-									início
-									
-								</span>
-								<span class="icon">
-									<i class="fa fa-home"></i>
-									
-								</span>
-							</a>
-						</li>
+			<div class="menu">
 
-						<li>
-							<a href="os.php">
-								<span class="nameitem">
+				<label >
+					<a href="index.php">
 
-									O.S 
+						<span class="nameitem">
 
-								</span>
-								<span class="icon">
-									<i class="fa fa-file"></i>
+							início
 
-								</span>
-							</a>
-						</li>
+						</span>
+						<span class="icon">
+							<i class="fa fa-home"></i>
 
-						<li>
-							<a href="clientes.php">
-								<span class="nameitem">
+						</span>
 
-									Clientes 
+					</a>
 
-								</span>
-								<span class="icon">
-									<i class="fa fa-user"></i>
-
-								</span>
-							</a>
-						</li>
-						
-						<li>
-							<a href="estoque.php">
-								<span class="nameitem">
-
-									Estoque 
-
-								</span>
-								<span class="icon">
-									<i class="fa fa-archive"></i>
-
-								</span>
-							</a>
-						</li>
-						
+				</label>
 
 
+				<input type="checkbox" id="OS">
+				<label for="OS">O.S</label>
+
+				<div class="submenu" id="ossub">
+
+					<a href="os.php"> Criar O.S </a>
+					<a href="os1.php"> Editar O.S </a>
+					<a href="os2.php"> Buscar O.S </a>
+					
+
+				</div><!-- fim submenu -->
 
 
-					</ul>
-				</div>
-				<a href="Index.html">
-					<span id="logo">
-						Logo 
-					</span>
-					<span id="name">
-						Nome da Empresa 
-					</span>
-				</a>
-			</div>
+				<input type="checkbox" id="clientes">
+				<label for="clientes">Clientes </label>
+
+				<div class="submenu" id="clisub">
+
+					<a href="?page=frontend/clientes.php"> Clientes </a>
+
+				</div><!-- fim submenu -->
+
+				<input type="checkbox" id="estoque">
+				<label for="estoque">Estoque</label>
+
+				<div class="submenu" id="estoquesub">
+					<a href="estoque.php">
+						<span class="nameitem">
+							Estoque 
+
+							<i class="fa fa-archive"></i>
+						</span>
+					</a>
+				</div> <!-- fim submenu -->
+				<input type="checkbox" id="servicos">
+				<label for="servicos">Serviços</label>
+
+				<div class="submenu" id="servsub">
+					<a href="serv.php">
+						<span class="nameitem">
+							servicos 1 
+
+							
+						</span>
+					</a>
+				</div> <!-- fim submenu -->
+
+			</div> <!-- fim menu -->
 
 		</nav>	
 	</header><!-- /header -->
