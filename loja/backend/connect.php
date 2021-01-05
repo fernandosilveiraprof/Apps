@@ -1,15 +1,23 @@
+
 <?php
-try{
-	$pdo = new PDO("mysql:dbname=system_db; host=localhost", "root","");
-}
-catch (PDOException $e){
-	echo "Erro no banco de dados: ".$e->getMessage();
+
+
+$dsn = "mysql:host=localhost; dbn:system_db;charset=utf8";
+$user = "root";
+$pass = "";
+
+try {
+
+	$conn = new PDO($dsn, $user, $pass);
+	echo "Conexão foi executada com sucesso!!!<br>";
+	return $conn ;
+
+} catch (PDOException $e) {
+
+	echo "Error: ".$e->getMessage();
 
 }
-catch(Exception $e){
-	echo "Erro Genérico:".$e->getMessage();
-}
 
-$pdo->query("INSERT INTO PESSOA(nome, telefone,email) VALUES ('Tartaruguinha', '13111111', 'tartaruguinha@gmail.com')");
+
 
 ?>

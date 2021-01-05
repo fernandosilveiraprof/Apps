@@ -5,30 +5,34 @@
 	<a href="">excluir</a>
 </nav>
 
-<div>
-	<?php
-	$mysqli = new mysqli("localhost", "root", "", "system_db");
 
-	/* check connection */
-	if (mysqli_connect_errno()) {
-		printf("Connect failed: %s\n", mysqli_connect_error());
-		exit();
-	}
+<?php
+require("../backend/connect.php");
 
-	$query = "SELECT `id`, `cpf`, `nome`, `nascimento`, `endereco`, `bairro`, `cidade`, `uf`, `ref` FROM `clientes` WHERE 1";
 
-	if ($result = $mysqli->query($query)) {
 
-		/* fetch object array */
-		while ($row = $result->fetch_row()) {
-			printf ($row[0], $row[1], $row[2], $row[3], $row[4]);
-		}
+print_r($conn);
 
-		/* free result set */
-		$result->close();
-	}
 
-	/* close connection */
-	$mysqli->close();
-	?>
-</div>
+$sql = 'INSERT INTO pessoas (nome,idade) values (?,?)';
+
+$stmt = $conn->prepare($sql);
+
+
+$nome = "zika";
+$idade = "22";
+
+
+$stmt -> bindValue(1, $nome );
+$stmt -> bindValue(2, $idade  );
+
+if ($stmt->execute()){
+
+	echo "<br>Salvo com sucesso";
+}else{
+	echo "<br>Erro ao salvar o registro no banco de dados ";
+
+}
+
+
+?>
