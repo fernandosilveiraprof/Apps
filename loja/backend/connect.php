@@ -2,21 +2,22 @@
 <?php
 
 
-$dsn = "mysql:host=localhost; dbn:system_db;charset=utf8";
-$user = "root";
-$pass = "";
+// $dsn = "mysql:host=localhost; dbn:system_db;charset=utf8";
+// $user = "root";
+// $pass = "";
 
-try {
+try{
+	$pdo = new PDO("mysql:dbname=system_db;host=localhost", "root", "");
 
-	$conn = new PDO($dsn, $user, $pass);
-	echo "Conexão foi executada com sucesso!!!<br>";
-	return $conn ;
-
-} catch (PDOException $e) {
-
-	echo "Error: ".$e->getMessage();
-
+	print "conexao com o banco de dados foi bem sucedida";
 }
+catch(PDOException $e){
+	echo "erro com banco de dados: ". $e->getMessage();
+
+
+} catch(Exeption $e){
+	echo "erro generico ".$e->getMessage();
+};
 
 
 
