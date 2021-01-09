@@ -6,7 +6,8 @@ require_once 'backend/connect.php';
 ?>
 
 <article>
-	###
+	
+
 	<?php 
 	$page = $_GET['page']?$_GET['page']:"frontend/inicio.php";
 	echo $page;
@@ -16,4 +17,5 @@ require_once 'backend/connect.php';
 
 
 </article>
+
 <?php require 'frontend/footer.php'; ?>
