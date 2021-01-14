@@ -10,8 +10,8 @@ require_once 'backend/connect.php';
 
 	<?php 
 	$page = $_GET['page']?$_GET['page']:"frontend/inicio.php";
-	echo $page;
-	include($page);
+	
+	include("$page");
 
 	?> 
 

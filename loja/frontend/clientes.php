@@ -1,5 +1,5 @@
 <?php
-require("../backend/connect.php");
+require("backend/connect.php");
 
 ?>
 
