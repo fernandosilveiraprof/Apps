@@ -16,11 +16,14 @@
 			padding-left: 20px;
 
 		}
+		select{
+			width:177px;
+		}
 
 	</style>
 </head>
 <body>
-	<form action="recebepcs.php" method="post">
+	<form action="recebepcs.php" method="get">
 
 		<h2> Cadastrar pcs </h2>
 
@@ -36,12 +39,19 @@
 
 			<tr>
 				<th> <label for="hd"> HD / SSD: </label> </th>
-				<td> <input type="text" name="hd" id="hd"> </td>
+				<td> 
+					<input type="text" name="armazenamento" id="armazenamento">
+					
+				</td>
 			</tr>
 
 			<tr>
 				<th> <label for="processador"> Processador: </label> </th>
 				<td> <input type="text" name="processador" id="processador"> </td>
+			</tr>
+			<tr>
+				<th> <label for="placamae"> Placa Mãe: </label> </th>
+				<td> <input type="text" name="placamae" id="placamae"> </td>
 			</tr>
 			<tr>
 				<th colspan="2">
