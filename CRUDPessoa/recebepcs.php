@@ -6,10 +6,26 @@ $armazenamento = isset( $_GET['armazenamento']) ? $_GET['armazenamento'] : "não
 $placamae = isset( $_GET['placamae'] )? $_GET['placamae'] : "não foi cadastrado" ;
 
 echo(
+	"<br>" . 
 	"<br>" . $nome . 
 	"<br>" . $processador . 
 	"<br>" . $memoria . 
 	"<br>" . $armazenamento . 
-	"<br>" . $placamae
+	"<br>" . $placamae .
+	"<br>"
 );
+$id = 0;
+
+require 'connect.php';
+
+$sql = 'INSERT INTO pcs (nome, processador, memoria, armazenamento, placamae) VALUES ( :n, :p, :m, :a, :pm)';
+$sql = $pdo->prepare($sql);
+$sql->bindParam(':n', "$nome");
+$sql->bindParam(':n', "$processador");
+$sql->bindParam(':n', "$memoria");
+$sql->bindParam(':n', "$armazenamento");
+$sql->bindParam(':n'," $placamae");
+
+$sql -> execute();
+;
 ?>
